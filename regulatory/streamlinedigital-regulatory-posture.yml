@@ -1,0 +1,20 @@
+generated: '2026-10-21'
+method: probed
+source: https://streamlinedigital.tech/privacypolicy
+signals:
+  - name: data_subject_request
+    evidence:
+      - source: https://streamlinedigital.tech/privacypolicy
+        http_status: 200
+        fetched: '/tmp/priv.html'
+        quote: "Under UK GDPR you have rights, including to:"
+        section: "14. Your rights"
+        note: Provider acknowledges data subject rights under UK GDPR.
+  - name: data_retention
+    evidence:
+      - source: https://streamlinedigital.tech/privacypolicy
+        http_status: 200
+        fetched: '/tmp/priv.html'
+        quote: "We keep personal data only as long as necessary for the purposes described in this policy and to meet legal requirements. Typically, we retain customer and commercial records for the duration of the relationship and up to 7 years afterwards"
+        section: "13. Data retention"
+        note: Retention period up to 7 years, plus longer if required by law.

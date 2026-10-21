@@ -1,0 +1,71 @@
+generated: '2026-10-21'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 4
+  own: 4
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - marketing
+  - portal
+  - website
+hosts:
+- host: api.streamlinedigital.tech
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: streamlinedigital.tech
+  role: api
+  relation: own
+- host: blog.streamlinedigital.tech
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Pricing
+  - Blog
+  serves: []
+  registrable_domain: streamlinedigital.tech
+  role: marketing
+  relation: own
+- host: portal.streamlinedigital.tech
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - DeveloperPortal
+  serves:
+  - docs
+  - cdn
+  vendor: cloudflare
+  registrable_domain: streamlinedigital.tech
+  role: portal
+  relation: own
+- host: streamlinedigital.tech
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Website
+  - Documentation
+  - Support
+  - PrivacyPolicy
+  - TermsOfService
+  serves: []
+  registrable_domain: streamlinedigital.tech
+  role: website
+  relation: own

@@ -1,23 +1,70 @@
 aid: streamlinedigital
+
 name: Streamline Digital
-description: 'Streamline Digital is a company surfaced via the API Evangelist harvest backlog (source:
-  g2-catalog) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://assets.cdn.filesafe.space/iwQMlpSziGSFpEjwxWal/media/68efb386629b059c45083a33.png
+
+description: 'Streamline Digital provides digital transformation consulting and integration services, helping enterprises streamline operations, connect disparate software systems, and adopt AI-ready solutions. Their platform offers strategic guidance, system architecture, and implementation support to accelerate growth and improve efficiency across businesses.'
+
 url: https://raw.githubusercontent.com/api-evangelist/streamlinedigital/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- DigitalTransformation
+- Consulting
+- Integration
+- AIReady
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: WellKnown
+  url: well-known/streamlinedigital-well-known.yml
+- type: Hosts
+  url: hosts/streamlinedigital-hosts.yml
+- type: Vendors
+  url: vendors/streamlinedigital-vendors.yml
+- type: Pricing
+  url: https://blog.streamlinedigital.tech/resources/category/pricing
+- type: DeveloperPortal
+  url: https://portal.streamlinedigital.tech/
+- type: DomainSecurity
+  url: security/streamlinedigital-domain-security.yml
 - type: Website
   url: https://streamlinedigital.tech/
+
+- type: Documentation
+  url: https://streamlinedigital.tech/our-services-and-pricing
+- type: Blog
+  url: https://blog.streamlinedigital.tech/resources
+- type: Support
+  url: https://streamlinedigital.tech/contactus
+- type: PrivacyPolicy
+  url: https://streamlinedigital.tech/privacypolicy
+- type: TermsOfService
+  url: https://streamlinedigital.tech/websitetermsofuse
+
+apis: []
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 10
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
